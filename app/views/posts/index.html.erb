@@ -1,0 +1,14 @@
+<h1>Here User Can Create New Posts</h1>
+<li>
+<%= link_to 'CREATE NEW POST', new_post_path %>
+</li>
+
+<ul>
+<% @posts.each do |post| %>
+
+
+   <li> <%= link_to post.content, post %></li>
+
+   
+</ul>
+<%end%>
